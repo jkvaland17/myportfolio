@@ -2,34 +2,49 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Award, Clock, Target } from "lucide-react";
 import teamPhoto from "@/assets/team-photo.jpg";
+import jaydip from "@/assets/jaydip.png";
 
 const About = () => {
   const values = [
     {
       icon: Target,
       title: "Quality First",
-      description: "We prioritize code quality, best practices, and maintainable solutions that stand the test of time."
+      description:
+        "We prioritize code quality, best practices, and maintainable solutions that stand the test of time.",
     },
     {
       icon: Clock,
       title: "Timely Delivery",
-      description: "We respect deadlines and deliver projects on time while maintaining the highest standards."
+      description:
+        "We respect deadlines and deliver projects on time while maintaining the highest standards.",
     },
     {
       icon: Users,
       title: "Collaboration",
-      description: "We work closely with our clients, ensuring transparent communication throughout the development process."
+      description:
+        "We work closely with our clients, ensuring transparent communication throughout the development process.",
     },
     {
       icon: Award,
       title: "Excellence",
-      description: "We strive for excellence in every project, continuously learning and adapting to new technologies."
-    }
+      description:
+        "We strive for excellence in every project, continuously learning and adapting to new technologies.",
+    },
   ];
 
   const skills = [
-    "React", "Next.js", "TypeScript", "Node.js", "Express", "MongoDB", 
-    "PostgreSQL", "AWS", "Docker", "Git", "API Design", "UI/UX"
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "PostgreSQL",
+    "AWS",
+    "Docker",
+    "Git",
+    "API Design",
+    "UI/UX",
   ];
 
   return (
@@ -42,8 +57,9 @@ const About = () => {
               About H&J Codecraft
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We are two passionate software engineers dedicated to creating exceptional 
-              digital experiences through modern web technologies and best practices.
+              We are two passionate software engineers dedicated to creating
+              exceptional digital experiences through modern web technologies
+              and best practices.
             </p>
           </div>
 
@@ -54,20 +70,22 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  H&J Codecraft was founded by two software engineers who share a passion 
-                  for creating high-quality web applications. With combined experience in 
-                  various industries, we understand the importance of building solutions 
-                  that not only work but scale and evolve with your business needs.
+                  H&J Codecraft was founded by two software engineers who share
+                  a passion for creating high-quality web applications. With
+                  combined experience in various industries, we understand the
+                  importance of building solutions that not only work but scale
+                  and evolve with your business needs.
                 </p>
                 <p>
-                  We specialize in modern JavaScript frameworks and have a deep understanding 
-                  of full-stack development. Our approach combines technical expertise with 
-                  business acumen to deliver solutions that drive real value.
+                  We specialize in modern JavaScript frameworks and have a deep
+                  understanding of full-stack development. Our approach combines
+                  technical expertise with business acumen to deliver solutions
+                  that drive real value.
                 </p>
                 <p>
-                  Whether you're a startup looking to build your first product or an 
-                  established company seeking to modernize your tech stack, we're here 
-                  to help you achieve your goals.
+                  Whether you're a startup looking to build your first product
+                  or an established company seeking to modernize your tech
+                  stack, we're here to help you achieve your goals.
                 </p>
               </div>
             </div>
@@ -97,7 +115,10 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="bg-gradient-card border-0 shadow-md hover:shadow-lg transition-all duration-300">
+              <Card
+                key={index}
+                className="bg-gradient-card border-0 shadow-md hover:shadow-lg transition-all duration-300"
+              >
                 <CardContent className="p-6 text-center">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-4">
                     <value.icon className="h-6 w-6 text-primary" />
@@ -157,7 +178,9 @@ const About = () => {
             <Card className="bg-gradient-card border-0 shadow-md">
               <CardContent className="p-8 text-center">
                 <div className="w-24 h-24 bg-gradient-primary rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary-foreground">H</span>
+                  <span className="text-2xl font-bold text-primary-foreground">
+                    H
+                  </span>
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">
                   Engineer H
@@ -166,26 +189,33 @@ const About = () => {
                   Full-Stack Developer
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Specializes in React, Node.js, and cloud architecture. 
+                  Specializes in React, Node.js, and cloud architecture.
                   Passionate about creating scalable and maintainable solutions.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-card border-0 shadow-md">
+            <Card className="bg-gradient-to-br from-blue-50 to-white border-0 shadow-lg rounded-xl">
               <CardContent className="p-8 text-center">
-                <div className="w-24 h-24 bg-gradient-primary rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary-foreground">J</span>
+                <div className="w-28 h-28 rounded-full mx-auto mb-6 overflow-hidden shadow-md border-4 border-white">
+                  <img
+                    src={jaydip} // or "/your-image-path.png"
+                    alt="Jaydip Valand"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Engineer J
+                <h3 className="text-2xl font-bold text-gray-800 mb-1">
+                  Jaydip Valand
                 </h3>
-                <p className="text-muted-foreground mb-4">
-                  Full-Stack Developer
+                <p className="text-blue-600 text-sm font-medium mb-4">
+                  Frontend Developer
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  Expert in modern JavaScript frameworks and database design. 
-                  Focused on performance optimization and user experience.
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Frontend expert with a strong grasp of modern JavaScript
+                  ecosystems and UI/UX best practices.
+                  <br />
+                  Focused on delivering clean code, fast performance, and
+                  delightful user experiences.
                 </p>
               </CardContent>
             </Card>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Code2, Mail, Github, Linkedin } from "lucide-react";
+import componyLogo from "@/assets/android-chrome-192x192.png"
 
 const Footer = () => {
   return (
@@ -9,9 +10,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="p-2 bg-gradient-primary rounded-lg">
-                <Code2 className="h-6 w-6 text-primary-foreground" />
-              </div>
+                <img src={componyLogo} alt="componyLogo" className="w-[40px]"/>
               <span className="font-heading font-bold text-xl text-foreground">
                 H&J Codecraft
               </span>

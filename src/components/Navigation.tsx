@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Code2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import componyLogo from "@/assets/android-chrome-192x192.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +25,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="p-2 bg-gradient-primary rounded-lg group-hover:shadow-glow transition-all duration-300">
-              <Code2 className="h-6 w-6 text-primary-foreground" />
-            </div>
+            <img src={componyLogo} alt="componyLogo" className="w-[40px]" />
             <span className="font-heading font-bold text-xl text-foreground">
               H&J Codecraft
             </span>
@@ -87,7 +86,11 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="pt-2">
-                <Button size="sm" className="w-full" onClick={() => setIsOpen(false)}>
+                <Button
+                  size="sm"
+                  className="w-full"
+                  onClick={() => setIsOpen(false)}
+                >
                   Get Started
                 </Button>
               </div>
