@@ -53,14 +53,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      info: "contact@hjcodecraft.com",
-      link: "mailto:contact@hjcodecraft.com"
+      info: "jkvaland3320@gmail.com",
+      link: "mailto:jkvaland3320@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      info: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      info: "+91-88666-56785",
+      link: "tel:+918866656785"
     },
     {
       icon: MapPin,
