@@ -199,7 +199,7 @@ const About = () => {
               <CardContent className="p-8 text-center">
                 <div className="w-28 h-28 rounded-full mx-auto mb-6 overflow-hidden shadow-md border-4 border-white">
                   <img
-                    src={jaydip} // or "/your-image-path.png"
+                    src={jaydip}
                     alt="Jaydip Valand"
                     className="w-full h-full object-cover"
                   />
