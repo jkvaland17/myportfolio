@@ -175,22 +175,27 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            <Card className="bg-gradient-card border-0 shadow-md">
+            <Card className="bg-gradient-to-br from-blue-50 to-white border-0 shadow-lg rounded-xl">
               <CardContent className="p-8 text-center">
-                <div className="w-24 h-24 bg-gradient-primary rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary-foreground">
-                    H
-                  </span>
+                <div className="w-28 h-28 rounded-full mx-auto mb-6 overflow-hidden shadow-md border-4 border-white">
+                  {/* <img
+                    src={jaydip}
+                    alt="Jaydip Valand"
+                    className="w-full h-full object-cover"
+                  /> */}
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Engineer H
+                <h3 className="text-2xl font-bold text-gray-800 mb-1">
+                  Harshad Makvana
                 </h3>
-                <p className="text-muted-foreground mb-4">
-                  Full-Stack Developer
+                <p className="text-blue-600 text-sm font-medium mb-4">
+                  Backend Developer
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  Specializes in React, Node.js, and cloud architecture.
-                  Passionate about creating scalable and maintainable solutions.
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Skilled in building robust backend systems using Node.js,
+                  Express, and modern databases.
+                  <br />
+                  Passionate about API design, system performance, and backend
+                  architecture that scales.
                 </p>
               </CardContent>
             </Card>
